@@ -44,6 +44,14 @@ public class drei_chinesen
         DCA_t = StringToArray(DC);
         printCharArray(DCA_t);
         
+        DC = replaceMultipleVocal(DC, "au");
+        
+        DCA_t = StringToArray(DC);
+        printCharArray(DCA_t);
+        
+        //if more than one replaced vokal
+        DC = isDoubled(DC);
+        
     }
     
     /**
@@ -109,6 +117,18 @@ public class drei_chinesen
         char[] chA = StringToArray(str);
         for(int c=0; c < chA.length -1; c++)if(true == isVocal(chA[c])) chA[c] = cR;
         return charToString(chA);
+    }
+    
+    /**
+     * replace all Vokals in a String, with an multiple given char
+     * 
+     * @param         String str
+     * @param         String c
+     * @return        int
+     */
+    public String replaceMultipleVocal(String str, String cR)
+    {
+        return str.replaceAll("[aeiou]", cR);
     }
     
     /**
