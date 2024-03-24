@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class name {
+
+	public static void main(String[] args) {
+		Scanner Sc =new Scanner(System.in);
+		Scanner Sca =new Scanner(System.in);
+		String[]  St =new String[3];
+		
+		//St[0] = "was das programm macht:";
+		//St[1] = "dazugehöriges rechenzeichen";
+		St[2] = "= ";
+		
+	  System.out.println(St[0]);                    
+	  int S1 = Sc.nextInt();                       
+	  System.out.println(St[1]);                  
+	  int S2 = Sca.nextInt();                    
+	  System.out.print(St[2]);                  
+	  int r = DS(S1, S2);
+	  System.out.print(r);
+	}
+	
+	public static int DS(int N1, int N2) {
+		//int result = N1 Rechnung N2;
+		return result;
+	}
+	
+}
