@@ -27,6 +27,7 @@ public class drei_chinesen
         char[] charArray = str.toCharArray();
         char previousChar = charArray[0];
         StringBuilder result = new StringBuilder();
+        
         for (char ch: charArray) 
         {
             if (isVocal(previousChar) && isVocal(ch))
