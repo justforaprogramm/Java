@@ -128,7 +128,7 @@ public class drei_chinesen
      */
     public String replaceMultipleVocal(String str, String cR)
     {
-        return str.replaceAll("[aeiou]", cR);
+        return str.replaceAll("[aeiouAEIOUs]", cR);
     }
     
     /**
