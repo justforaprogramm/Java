@@ -24,7 +24,14 @@ public class drei_chinesen
             }
             else if("AEIOUÄÖÜ".indexOf(str.charAt(i)) != -1)
             {
-                result.append(reStr.toUpperCase());
+                if(reStr.length() == 1)
+                {
+                    result.append(reStr.toUpperCase());
+                }
+                else if(reStr.length() > 1)
+                {
+                    result.append(reStr.substring(0,1).toUpperCase() + reStr.substring(1));
+                }
             }
             else
             {
